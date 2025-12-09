@@ -8,7 +8,7 @@
 
 This project leverages LLMs to analyze Reddit threads, offering concise summaries and key insights. It helps users grasp lengthy discussions quickly. For an entertaining learning experience, try selecting one of the humorous tones! This project is intended purely for educational purposes, with the main goal of avoiding the need to spend half an hour reading an entire thread.
 
-The project is also hosted free [here](#) which you can try. It uses LLama 3.3-70B-instruct as the LLM and llama-3.2-11b-vision-instruct as VLM.
+The project is also hosted free [here](https://reddit-llm-analyzer-2010.streamlit.app/) which you can try. It uses LLama 3.3-70B-instruct as the LLM and llama-3.2-11b-vision-instruct as VLM.
 
 [Watch the video](https://youtu.be/XIvvWDsxvqk)
 
