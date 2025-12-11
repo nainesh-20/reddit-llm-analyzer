@@ -52,6 +52,7 @@ def fetch_thread_data(url: str) -> Dict:
                 delay = random.randint(1, 15)
                 time.sleep(delay)
     
+    print("DEBUG: Returning failure data with url:", url)
     all_data = {
         "title": None,
         "original_post": None,

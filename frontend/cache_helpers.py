@@ -49,7 +49,9 @@ def pre_filter_analyses(all_analyses, all_thread_data, summary_focus, summary_le
     if all_thread_data['original_post']:
         url = all_thread_data['original_post']['url']
     else:
-        url = all_thread_data['url']
+        url = all_thread_data.get('url')
+        if url is None:
+             print(f"DEBUG: 'url' key missing or None in all_thread_data. Keys: {all_thread_data.keys()}")
         
     filtered_analyses = all_analyses[
         (all_analyses['url'] == url) &
