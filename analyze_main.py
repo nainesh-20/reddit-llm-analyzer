@@ -103,6 +103,8 @@ def analyze_reddit_thread(all_data, summary_focus, summary_length, tone, include
     }
 
     OP = all_data['original_post']
+    if OP is None:
+        return "Failed to fetch thread data. Please check the URL or try again later.", None, [None, None]
     image_links = OP.get("image_link", [])
     extra_links = OP.get("extra_content_link", [])
     image_responses, link_summaries = process_media_content(image_links, extra_links, analyze_image, search_external)
