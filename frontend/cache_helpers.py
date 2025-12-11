@@ -136,7 +136,7 @@ def perform_new_analysis(conn, all_thread_data, summary_focus, summary_length, t
     if not all_thread_data['original_post']:
         all_thread_data = fetch_thread_data(all_thread_data['url'])
         if all_thread_data['original_post'] is None:
-            return "Failed to fetch thread data. Please try again later.", None, None
+            return "Failed to fetch thread data. Please try again later.", None, [None, None]
     
     # Perform the analysis
     analysis_result, sum_for_5yo, notable_comments = analyze_reddit_thread(
